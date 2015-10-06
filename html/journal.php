@@ -7,7 +7,7 @@
 
     <?php include('part-header.php') ?>
 
-    <main class="list">
+    <main>
         <article class="about container row">
             <div class="titleArea row">
                 <h3 class="title">Journal</h3>

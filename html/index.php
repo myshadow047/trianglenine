@@ -7,7 +7,7 @@
 
     <?php include('part-header.php') ?>
 
-    <main class="content home">
+    <main>
         <article class="heroBanner">
             <div class="bannerSlide">
                 <img src="themes/img/banner1.jpg" alt="">

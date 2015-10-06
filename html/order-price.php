@@ -7,7 +7,7 @@
 
     <?php include('part-header.php') ?>
 
-    <main class="list">
+    <main>
         <article class="price container row">
             <div class="titleArea">
                 <h3 class="title">Price</h3>
@@ -40,7 +40,7 @@
                         </li>
                     </ol>
                     <p>
-                        Untuk informasi lebih detail, konsultasi bahan, permintaan penawaran, dan pemesanan bisa dengan cara  email ke <a href="mailto:giarswimm@yahoo.co.id">giarswimm@yahoo.co.id</a>.
+                        Untuk informasi lebih detail, konsultasi bahan, permintaan penawaran, dan pemesanan bisa dengan cara  email ke <a href="mailto:giarswimm@yahoo.co.id">giarswimm@yahoo.co.id</a> atau dengan mengisi <b>form dibawah ini</b>.
                     </p>
                 </div>
 
@@ -53,35 +53,22 @@
                         <div class="titleArea">
                             <h3 class="title">Order</h3>
                         </div>
-                        <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 inputContent">
-                            <div class="row">
+                        <div class="row">
+                            <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 inputContent">
                                 <div class="input">
                                     <input type="text" placeholder="Enter your e-mail name">
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="input">
                                     <input type="email" placeholder="Enter your e-mail address">
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="input">
                                     <input type="text" placeholder="Enter your phone number">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="input">
-                                    <input type="text" placeholder="Enter ingredients">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 inputContent">
-                            <div class="row">
+                            <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 inputContent">
                                 <div class="input">
                                     <input type="text" placeholder="Enter dimensions">
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="input">
                                     <textarea name="" id="" cols="30" rows="10" placeholder="Enter your detail request"></textarea>
                                 </div>
@@ -92,8 +79,8 @@
                         <div class="titleArea">
                             <h3 class="title">Upload Image</h3>
                         </div>
-                        <ul class="flat">
-                            <li>
+                        <ul class="flat row">
+                            <li class="xlarge-3 large-3 medium-6 small-6 tiny-6">
                                 <div class="imageArea">
                                     <div class="image empty" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
                                     <div class="bg">
@@ -101,7 +88,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="xlarge-3 large-3 medium-6 small-6 tiny-6">
                                 <div class="imageArea">
                                     <div class="image empty" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
                                     <div class="bg">
@@ -109,7 +96,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="xlarge-3 large-3 medium-6 small-6 tiny-6">
                                 <div class="imageArea">
                                     <div class="image empty" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
                                     <div class="bg">
@@ -117,7 +104,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="xlarge-3 large-3 medium-6 small-6 tiny-6">
                                 <div class="imageArea">
                                     <div class="image empty" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
                                     <div class="bg">

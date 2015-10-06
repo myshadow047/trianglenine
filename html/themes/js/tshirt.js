@@ -100,13 +100,13 @@ $(function() {
     });
 
     // Show side menu
-    $(".nav-menu h1 a").click(function () {
-        if ($(".sidebar").length > 0) {
-            $("body").toggleClass ("show-sidebar")
-        }
+    // $(".nav-menu h1 a").click(function () {
+    //     if ($(".sidebar").length > 0) {
+    //         $("body").toggleClass ("show-sidebar")
+    //     }
 
-        return false;
-    });
+    //     return false;
+    // });
 
     // Tree fallback and saving function
     $(".tree input").click(function () {

@@ -7,7 +7,7 @@
     
     <?php include('part-header.php') ?>
     
-    <main class="list">
+    <main>
         <article class="detail container row">
             <div class="titleArea row">
                 <h3 class="title">Detail Product</h3>

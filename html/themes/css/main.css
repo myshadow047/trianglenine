@@ -51,7 +51,7 @@ h2.resp-tab-active span.resp-arrow { border-left: 6px solid transparent; border-
 .resp-arrow { margin-top: 12px; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 8px solid #999; }
 
 
-.product .thumbPreview .title { font-size: 16px; cursor: pointer; color: #999; line-height: 130%; font-family: 'typomodernobold'; letter-spacing: 0.5pt; }
+.product .thumbPreview .title { font-size: 16px; cursor: pointer; color: #999; line-height: 130%; font-family: 'typomodernobold'; letter-spacing: 0.5pt; font-weight: 400; }
 .product .thumbPreview .title:hover,
 .product .thumbPreview .title.resp-tab-active { color: #D52925; }
 .product .thumbPreview .title span { vertical-align: middle; } 
@@ -107,14 +107,12 @@ ul.pagination li.active a { background: #D52925; }
 .imageAbout { border-bottom: 1px solid #ddd; }
 .imageAbout .image { display: block; height: 400px; }
 
-.aboutContent { margin-bottom: 50px; }
-
 .storeContent { background-color: #f9f9f9; padding: 50px 0 0; border-top: 1px solid #ddd; }
 .storeContent .span-6:first-child { padding-right: 30px; }
 .storeContent h6 { margin: 0; color: #8A8A89; line-height: 150%; }
 .storeContent h6 strong { color: #666; }
 .storeContent h6 strong.red { color: #D52925; }
-.storeContent .label { font-family: 'typomodernobold'; letter-spacing: 0.5pt; color: #000; text-transform: uppercase; margin-bottom: 3px; }
+.storeContent .label { font-family: 'typomodernobold'; letter-spacing: 1px; color: #000; text-transform: uppercase; margin-bottom: 3px; }
 .storeContent ul { margin: 0; }
 .storeContent .word { border: 1px solid #aaa; padding: 10px 20px; margin: 40px 0; background: #efeeef; }
 .storeContent hr { width: 30px; margin: 20px 0; }
@@ -218,7 +216,7 @@ ul.pagination li.active a { background: #D52925; }
 .detail hr { width: 30px; display: inline-block; margin: 15px 0 }
 .detail .detailDesc { padding: 0 0 0 40px; }
 .detail .detailDesc h3 { font-family: 'typomodernobold'; letter-spacing: 0.5pt; line-height: 140%; border-bottom: 1px solid #000; text-transform: uppercase; font-size: 1.5em; margin-bottom: 30px; padding: 0 0 20px; color: #000; }
-.detail .detailDesc h6 { margin: 0 0 6px; text-transform: uppercase; font-size: 1.1em; letter-spacing: 0.5pt; color: #000; font-family: 'typomodernobold'; }
+.detail .detailDesc h6 { margin: 0 0 6px; text-transform: uppercase; font-size: 1.1em; letter-spacing: 1px; color: #000; font-family: 'typomodernobold'; }
 .detail .detailDesc p { font-size: 1.1em; line-height: 150%; color: #707070; }
 /*.detail .detailDesc ul { margin: 0 auto; }*/
 .detail .detailDesc ul p { margin: 0; }
@@ -251,28 +249,29 @@ ul.pagination li.active a { background: #D52925; }
 /*.request, 
 .detail { margin-bottom: 30px; }*/
 
-.inputArea { padding: 0 15px; }
-.inputArea { margin-bottom: 30px; }
+.inputArea { padding: 0 15px; margin-bottom: 30px; }
+.inputArea .row { margin: 0; }
 .inputArea .inputContent { padding: 0; }
 .inputArea ::-webkit-input-placeholder { color: rgba(48, 48, 48, 0.6); }
 .inputArea :-moz-placeholder { color: rgba(48, 48, 48, 0.6); }
 .inputArea ::-moz-placeholder { color: rgba(48, 48, 48, 0.6); }
 .inputArea :-ms-input-placeholder { color: rgba(48, 48, 48, 0.6); }
 .inputArea .wrapper { padding: 0; }
-.inputArea .input { margin: 6px 0; }
+.inputArea .input { margin: 0; padding: 5px 0; }
 .inputArea .input input,
 .inputArea .input textarea { border: 1px solid #aaa; border-radius: 0; color: #303030; padding: 10px; font-weight: 400; }
 
-.uploadArea ul { margin: 0 auto; padding: 0 15px; text-align: center; }
-.uploadArea ul li { display: table; line-height: 0; margin: 3px; float: none; display: inline-block; }
-.uploadArea ul li:last-child { margin: 3px; }
-.uploadArea .imageArea { width: 138px; height: 138px; display: inline-block; border: 1px solid #aaa; position: relative; }
+.uploadArea { padding: 0 15px; }
+.uploadArea ul { margin: 0 auto; padding: 0; text-align: center; }
+.uploadArea ul li { display: table; line-height: 0; padding: 5px; margin: 0; float: none; display: inline-block; }
+/*.uploadArea ul li:last-child { padding: 3px; }*/
+.uploadArea .imageArea { width: 100%; height: 138px; display: inline-block; border: 1px solid #aaa; position: relative; }
 .uploadArea .imageArea .image { display: block; height: 100%; }
 .uploadArea .imageArea .image.empty { display: none!important; }
 .uploadArea .imageArea .bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(255, 255, 255, 0.6); }
-.uploadArea .imageArea .buttonUpload { font-size: 6em; line-height: 138px; font-weight: 100; text-align: center; display: block; color: #aaa; }
+.uploadArea .imageArea .buttonUpload { font-size: 6em; line-height: 136px; font-weight: 100; text-align: center; display: block; color: #aaa; }
 
-.submitArea { text-align: center; margin-top: 40px; }
+.submitArea { text-align: center; margin-top: 30px; padding: 0 15px; }
 a.button,
 input[type="submit"] { 
 	border: 0; color: #fff; text-transform: uppercase; margin: 0; display: block; font-size: 1em; padding: 10px 30px 13px; font-family: 'typomodernobold'; letter-spacing: 0.5pt; margin-top: 10px; background-color: #8A8A89; line-height: 100%; 
@@ -315,8 +314,11 @@ footer .contact li:last-child { border-right: 0; padding-right: 0; margin-right:
 .owl-theme .owl-controls .owl-page { display: inline-block; zoom: 1; }
 .owl-theme .owl-controls .owl-page span { 
 	display: block; width: 16px; height: 16px; margin: 5px 7px; border: 1px solid rgba(255, 255, 255, 0.9); background: transparent;
-	transform: rotate(45deg) scalex(1);
-    -webkit-transform: rotate(45deg) scalex(1);
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
 	-webkit-box-shadow: 0 0 16px rgba(0,0,0,0.64);
 	-moz-box-shadow: 0 0 16px rgba(0,0,0,0.64);
 	-ms-box-shadow: 0 0 16px rgba(0,0,0,0.64);
@@ -390,6 +392,12 @@ footer .contact li:last-child { border-right: 0; padding-right: 0; margin-right:
 #portfolio li { font-size:1.2em; padding:0; line-height:48px; font-weight:400 }
 #portfolio .porto { padding: 10px; text-align: center; }
 #portfolio .porto .image { display: block; height: 350px; padding: 20px; }
+
+#portfolio .productThumb .imageArea { padding: 20px; }
+#portfolio .productThumb .thumb { min-height: 316px; }
+#portfolio .productThumb .img { height: 200px; }
+#portfolio .productThumb .descArea .subTitle { display: block; color: #999; font-size: 1em; font-style: italic; }
+#portfolio .productThumb .descArea h4 { margin: 5px 0 0; color: #000; font-family: 'typomodernobold'; letter-spacing: 1px; font-size: 1.1em; line-height: 130%; }
 /*#portfolio .porto .button { 
 	display: block; font-size: 1em; padding: 10px 30px 13px; font-family: 'typomodernobold'; letter-spacing: 0.5pt; margin-top: 10px; background-color: #8A8A89; 
 	-webkit-border-radius: 5px;
@@ -433,7 +441,7 @@ footer .contact li:last-child { border-right: 0; padding-right: 0; margin-right:
 
 
 /*.gmnoprint { display: none; }*/
-.gm-style-cc { display: none; }
+/*.gm-style-cc { display: none; }*/
 
 
 
@@ -450,15 +458,17 @@ footer .contact li:last-child { border-right: 0; padding-right: 0; margin-right:
 	.resp-tab-content { padding: 30px 0; border-bottom: 0; }
 
 	.inputArea { padding: 0; margin-bottom: 50px; }
-	.inputArea .inputContent:first-child { padding-right: 20px; }
-	.inputArea .inputContent:last-child { padding-left: 20px; }
-	.inputArea .input { margin: 10px 0; }
+	.inputArea .row { margin-top: -5px; margin-left: -10px; }
+	.inputArea .input { margin: 0; padding: 5px 10px; }
 
-	.uploadArea ul { margin: 0; padding: 0; }
-	.uploadArea ul li { display: table; line-height: 0; margin: 0 16px 0 0; float: left; }
-	.uploadArea ul li:last-child { margin: 0; }
-	.uploadArea .imageArea { width: 230px; height: 230px; }
+	.uploadArea { padding: 0; }
+	.uploadArea ul { margin-top: -5px; margin-left: -10px; }
+	.uploadArea ul li { display: table; line-height: 0; padding: 10px; float: left; }
+	/*.uploadArea ul li:last-child { margin: 0; }*/
+	.uploadArea .imageArea { height: 230px; }
 	.uploadArea .imageArea .buttonUpload { font-size: 10em; line-height: 228px; }
+
+	.submitArea { padding: 0; margin-top: 40px; }
 
 	/*.footer .row { text-align: right; }*/
 	/*.footer nav { padding: 20px 0; display: inline-block; vertical-align: middle; padding: 0; width: 80.5%; }*/
