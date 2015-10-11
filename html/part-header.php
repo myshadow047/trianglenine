@@ -10,10 +10,6 @@
                 <span></span>
             </div>
         </div>
-        <!-- <div class="menu-switcher">
-            <i class="xn xn-menu"></i>
-            <span>Menu</span>
-        </div> -->
         <div class="container row menuArea">
             <ul class="topbar pull-left">
                 <li><a href="index.php">Home</a></li>

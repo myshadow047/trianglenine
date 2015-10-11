@@ -37,12 +37,6 @@ $(function() {
 		$(this).toggleClass("toggleDrawer").siblings(".toggleMenu").slideToggle(128);
 	});
 
-
-	$(".menu-switcher").click(function(){
-		$(this).siblings(".menuArea").slideToggle(128);
-	});
-
-
 	$(".heroBanner").owlCarousel({
 		itemsCustom : [
 			[0, 1],
