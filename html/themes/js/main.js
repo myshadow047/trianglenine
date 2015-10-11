@@ -8,31 +8,6 @@ $(function() {
 
 	$("#product section").easyResponsiveTabs();
 
-	$(".titleClick .shirtButton").click(function(){
-		$(".titlePage").removeClass("active").addClass("disable");
-		$(this).addClass("active").removeClass("disable");
-		$(".productThumb").addClass("hide");
-		$(".shirt").removeClass("hide");
-	});
-	$(".titleClick .jacketButton").click(function(){
-		$(".titlePage").removeClass("active").addClass("disable");
-		$(this).addClass("active").removeClass("disable");
-		$(".productThumb").addClass("hide");
-		$(".jacket").removeClass("hide");
-	});
-	$(".titleClick .sweatherButton").click(function(){
-		$(".titlePage").removeClass("active").addClass("disable");
-		$(this).addClass("active").removeClass("disable");
-		$(".productThumb").addClass("hide");
-		$(".sweather").removeClass("hide");
-	});
-	$(".titleClick .uniformButton").click(function(){
-		$(".titlePage").removeClass("active").addClass("disable");
-		$(this).addClass("active").removeClass("disable");
-		$(".productThumb").addClass("hide");
-		$(".uniform").removeClass("hide");
-	});
-
 	$(".toggleDown").click(function(){
 		$(this).toggleClass("toggleDrawer").siblings(".toggleMenu").slideToggle(128);
 	});
