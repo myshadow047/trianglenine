@@ -34,8 +34,14 @@ $(function() {
 	});
 
 	$(".toggleDown").click(function(){
-		$(this).toggleClass("toggleDrawer").parent().parent().parent().siblings(".toggleMenu").slideToggle(128);
+		$(this).toggleClass("toggleDrawer").siblings(".toggleMenu").slideToggle(128);
 	});
+
+
+	$(".menu-switcher").click(function(){
+		$(this).siblings(".menuArea").slideToggle(128);
+	});
+
 
 	$(".heroBanner").owlCarousel({
 		itemsCustom : [

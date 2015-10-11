@@ -1,7 +1,7 @@
         <article class="storeContent">
             <div class="container">
                 <div class="row">
-                    <div class="span-6">
+                    <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
                         <div class="titleArea">
                             <h3 class="title">Store Location</h3>
                         </div>
@@ -35,7 +35,7 @@
                             Monday - Saturday, <strong>9 AM</strong> - <strong>9 PM</strong> WIB
                         </h6>
                     </div>
-                    <div class="span-6">
+                    <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
                         <div class="titleArea">
                             <h3 class="title">Workshop Location</h3>
                         </div>

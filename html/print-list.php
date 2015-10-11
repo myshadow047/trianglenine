@@ -14,7 +14,7 @@
             </div>
             <div class="thumbArea">
                 <div class="productThumb print row animated fadeIn">
-                    <div class="thumb span-6">
+                    <div class="thumb xlarge-6 large-6 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail-print.php">
                                 <div class="img" style="background: url('themes/img/sablon1.jpg') center no-repeat; background-size: cover;"></div>
@@ -28,7 +28,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-6">
+                    <div class="thumb xlarge-6 large-6 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail-print.php">
                                 <div class="img" style="background: url('themes/img/sablon2.jpg') center no-repeat; background-size: cover;"></div>
@@ -42,7 +42,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-6">
+                    <div class="thumb xlarge-6 large-6 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail-print.php">
                                 <div class="img" style="background: url('themes/img/sablon3.jpg') center no-repeat; background-size: cover;"></div>
@@ -55,7 +55,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-6">
+                    <div class="thumb xlarge-6 large-6 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail-print.php">
                                 <div class="img" style="background: url('themes/img/sablon4.jpg') center no-repeat; background-size: cover;"></div>

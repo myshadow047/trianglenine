@@ -14,7 +14,7 @@
             </div>
             <div class="thumbArea">
                 <div class="productThumb row animated fadeIn">
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-shirt1.png') center no-repeat; background-size: 80%;"></div>
@@ -28,7 +28,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-vneck2.png') center no-repeat; background-size: 80%;"></div>
@@ -42,7 +42,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-polo1.png') center no-repeat; background-size: 80%;"></div>
@@ -55,7 +55,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-shirt3.png') center no-repeat; background-size: 80%;"></div>
@@ -69,7 +69,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-shirt2.png') center no-repeat; background-size: 80%;"></div>
@@ -82,7 +82,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-vneck2.png') center no-repeat; background-size: 80%;"></div>
@@ -95,7 +95,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-polo2.png') center no-repeat; background-size: 80%;"></div>
@@ -108,7 +108,7 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="thumb span-3">
+                    <div class="thumb xlarge-3 large-3 medium-6 small-12 tiny-12">
                         <div class="imageArea">
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-shirt4.png') center no-repeat; background-size: 80%;"></div>
