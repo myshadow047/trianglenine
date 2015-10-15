@@ -19,7 +19,6 @@
                             <a href="detail-print.php">
                                 <div class="img" style="background: url('themes/img/sablon1.jpg') center no-repeat; background-size: cover;"></div>
                             </a>
-                            <span class="badge">New</span>
                         </div>
                         <div class="descArea row">
                             <a href="#" class="tagline">Plastisol</a>
@@ -33,7 +32,6 @@
                             <a href="detail-print.php">
                                 <div class="img" style="background: url('themes/img/sablon2.jpg') center no-repeat; background-size: cover;"></div>
                             </a>
-                            <span class="badge disc">50%</span>
                         </div>
                         <div class="descArea row">
                             <a href="#" class="tagline">Rubber</a>
@@ -70,15 +68,6 @@
                     </div>
                 </div>
             </div>
-            <ul class="pagination centered">
-                <li><a href="#"><i class="xn xn-angle-double-left"></i></a></li>
-                <li><a href="#"><i class="xn xn-left-open-big"></i></a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#"><i class="xn xn-right-open-big"></i></a></li>
-                <li><a href="#"><i class="xn xn-angle-double-right"></i></a></li>
-            </ul>
         </article>
         
         <?php include('part-store.php') ?>

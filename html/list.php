@@ -19,7 +19,7 @@
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-shirt1.png') center no-repeat; background-size: 80%;"></div>
                             </a>
-                            <span class="badge">New</span>
+                            <span class="badge">T-001</span>
                         </div>
                         <div class="descArea row">
                             <a href="#" class="tagline">O-Neck</a>
@@ -33,7 +33,7 @@
                             <a href="detail.php">
                                 <div class="img" style="background: url('themes/img/img-vneck2.png') center no-repeat; background-size: 80%;"></div>
                             </a>
-                            <span class="badge disc">50%</span>
+                            <span class="badge">T-002</span>
                         </div>
                         <div class="descArea row">
                             <a href="#" class="tagline">V-Neck</a>

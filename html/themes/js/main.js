@@ -12,6 +12,10 @@ $(function() {
 		$(this).toggleClass("toggleDrawer").siblings(".toggleMenu").slideToggle(128);
 	});
 
+	$(".shareToggle .share").click(function(){
+		$(this).toggleClass("click").siblings(".context-menu").slideToggle(128);
+	});
+
 	$(".heroBanner").owlCarousel({
 		itemsCustom : [
 			[0, 1],
@@ -23,8 +27,7 @@ $(function() {
 		],
 		autoPlay : false,
 		pagination: true,
-		autoHeight: true,
-		touchDrag: false
+		autoHeight: true
 	});
 
 	$(".client .clientArea").owlCarousel({

@@ -11,19 +11,19 @@
         <article class="heroBanner">
             <div class="bannerSlide">
                 <img src="themes/img/banner1.jpg" alt="">
-                <a href="#" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></a>
+                <a href="#" class="banner" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></a>
             </div>
             <div class="bannerSlide">
                 <img src="themes/img/banner5.png" alt="">
-                <a href="#" style="background: url('themes/img/banner5.png') center no-repeat; background-size: cover;"></a>
+                <a href="#" class="banner" style="background: url('themes/img/banner5.png') center no-repeat; background-size: cover;"></a>
             </div>
             <div class="bannerSlide">
                 <img src="themes/img/banner3.jpg" alt="">
-                <a href="#" style="background: url('themes/img/banner7.jpg') center no-repeat; background-size: cover;"></a>
+                <a href="#" class="banner" style="background: url('themes/img/banner7.jpg') center no-repeat; background-size: cover;"></a>
             </div>
             <div class="bannerSlide">
                 <img src="themes/img/banner8.jpg" alt="">
-                <a href="#" style="background: url('themes/img/banner8.jpg') center no-repeat; background-size: cover;"></a>
+                <a href="#" class="banner" style="background: url('themes/img/banner8.jpg') center no-repeat; background-size: cover;"></a>
             </div>
         </article>
         <article id="product" class="product container">
@@ -56,7 +56,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge">New</span>
+                                <span class="badge">T-001</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -70,7 +70,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-vneck2.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge disc">50%</span>
+                                <span class="badge">T-002</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">V-Neck</a>
@@ -84,6 +84,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-polo1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-003</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">Polo</a>
@@ -97,6 +98,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt3.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-004</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -112,6 +114,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-polo1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-005</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">Polo</a>
@@ -125,6 +128,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt3.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-006</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -138,7 +142,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge">New</span>
+                                <span class="badge">T-007</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -152,7 +156,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-vneck2.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge disc">50%</span>
+                                <span class="badge">T-008</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">V-Neck</a>
@@ -168,7 +172,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge">New</span>
+                                <span class="badge">T-001</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -182,7 +186,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-vneck2.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge disc">50%</span>
+                                <span class="badge">T-002</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">V-Neck</a>
@@ -196,6 +200,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-polo1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-003</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">Polo</a>
@@ -209,6 +214,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt3.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-004</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -224,6 +230,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-polo1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-005</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">Polo</a>
@@ -237,6 +244,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt3.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
+                                <span class="badge">T-006</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -250,7 +258,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-shirt1.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge">New</span>
+                                <span class="badge">T-007</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">O-Neck</a>
@@ -264,7 +272,7 @@
                                 <a href="detail.php">
                                     <div class="img" style="background: url('themes/img/img-vneck2.png') center no-repeat; background-size: 80%;"></div>
                                 </a>
-                                <span class="badge disc">50%</span>
+                                <span class="badge">T-008</span>
                             </div>
                             <div class="descArea row">
                                 <a href="detail.php" class="tagline">V-Neck</a>
