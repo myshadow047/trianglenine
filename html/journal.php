@@ -72,6 +72,15 @@
                         </p>
                         <a href="journal-detail.php" class="more button">Read more</a>
                     </div>
+                    <ul class="pagination centered">
+                        <li><a href="#"><i class="xn xn-angle-double-left"></i></a></li>
+                        <li><a href="#"><i class="xn xn-left-open-big"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><i class="xn xn-right-open-big"></i></a></li>
+                        <li><a href="#"><i class="xn xn-angle-double-right"></i></a></li>
+                    </ul>
                 </div>
                 <div class="journalSidebar xlarge-4 large-4 medium-4 small-12 tiny-12">
                     <div class="row">
