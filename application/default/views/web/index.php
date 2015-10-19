@@ -1,20 +1,10 @@
 <article class="heroBanner">
-    <div class="bannerSlide">
-        <img src="<?php echo theme_url('web/themes/img/banner1.jpg') ?>" alt="">
-        <a href="#" class="banner" style="background: url('<?php echo theme_url('web/themes/img/banner1.jpg') ?>') center no-repeat; background-size: cover;"></a>
-    </div>
-    <div class="bannerSlide">
-        <img src="<?php echo theme_url('web/themes/img/banner5.png') ?>" alt="">
-        <a href="#" class="banner" style="background: url('<?php echo theme_url('web/themes/img/banner5.png') ?>') center no-repeat; background-size: cover;"></a>
-    </div>
-    <div class="bannerSlide">
-        <img src="<?php echo theme_url('web/themes/img/banner3.jpg') ?>" alt="">
-        <a href="#" class="banner" style="background: url('<?php echo theme_url('web/themes/img/banner7.jpg') ?>') center no-repeat; background-size: cover;"></a>
-    </div>
-    <div class="bannerSlide">
-        <img src="<?php echo theme_url('web/themes/img/banner8.jpg') ?>" alt="">
-        <a href="#" class="banner" style="background: url('<?php echo theme_url('web/themes/img/banner8.jpg') ?>') center no-repeat; background-size: cover;"></a>
-    </div>
+    <?php foreach ($home_banner as $banner): ?>
+        <div class="bannerSlide">
+            <img src="<?php echo base_url('data/home_banner/image/' . $banner['image']) ?>" alt="<?php echo $banner['name'] ?>">
+            <a href="#" class="banner" style="background: url('<?php echo base_url('data/home_banner/image/' . $banner['image']) ?>') center no-repeat; background-size: cover;"></a>
+        </div>
+    <?php endforeach ?>
 </article>
 
 <article id="product" class="product container">
@@ -280,30 +270,11 @@
 <article class="client">
     <div class="container">
         <div class="clientArea">
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy1.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy3.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy2.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy4.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy5.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy6.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy11.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
-            <div class="clientSlide">
-                <span style="background: url('<?php echo theme_url('web/themes/img/dummy12.png') ?>') center no-repeat; background-size: contain;"></span>
-            </div>
+            <?php foreach ($portfolio as $port): ?>
+                <div class="clientSlide">
+                    <span style="background: url('<?php echo base_url('data/portfolio/logo/'.$port['logo']) ?>') center no-repeat; background-size: contain;"></span>
+                </div>
+            <?php endforeach ?>
         </div>
     </div>
 </article>

@@ -13,15 +13,36 @@ class web extends app_crud_controller {
     }
 
     function index() {
+        $banner = $this->getDataBanner();
+        $portfolio = $this->getDataPortfolio();
 
+        $this->_data['home_banner'] = $banner;
+        $this->_data['portfolio'] = $portfolio;
+    }
+
+    function getDataBanner() {
+        $banner = $this->db->query('SELECT * FROM home_banner WHERE status = ?', array(1))->result_array();
+
+        return $banner;
     }
 
     function about() {
+        $about = $this->db->query('SELECT * FROM about WHERE status = ?', array(1))->row_array();
 
+        $this->_data['about'] = $about;
     }
 
     function portfolio() {
+        $this->load->helper('format');
+        $portfolio = $this->getDataPortfolio();
 
+        $this->_data['portfolio'] = $portfolio;
+    }
+
+    function getDataPortfolio() {
+        $portfolio = $this->db->query('SELECT * FROM portfolio WHERE status = ?', array(1))->result_array();
+
+        return $portfolio;
     }
 
     function journal() {

@@ -19,8 +19,8 @@
         <form action="" method="post">
             <div class="login-form">
 
-                <?php /* Put your logo here inside div.logo */ ?>
                 <div class="logo">
+                    <img width="100" src="<?php echo theme_url('web/themes/img/logo.png') ?>">
                     <div class="title">Trianglenine<br /></div>
                 </div>
 
