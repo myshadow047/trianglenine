@@ -7,58 +7,54 @@
     </div>
     <div class="row">
         <div class="journalContent xlarge-8 large-8 medium-8 small-12 tiny-12">
-            <div class="row contentArea">
-                <h4 class="subTitle">
-                    <a href="<?php echo site_url('web/journal_detail') ?>">Title Content</a>
-                </h4>
-                <div class="dateShare row">
-                    <h6 class="date">Tuesday, October 6th, 2015</h6>
+            <?php if ($data_journal): ?>
+                <?php foreach ($data_journal as $key => $journal): ?>
+                    <div class="row contentArea">
+                        <h4 class="subTitle">
+                            <a href="<?php echo site_url('web/journal/'.$journal['category'].'/'.$journal['identifier']) ?>"><?php echo $journal['title'] ?></a>
+                        </h4>
+                        <div class="dateShare row">
+                            <h6 class="date"><?php echo date('l, d M Y', strtotime($journal['created_time'])) ?></h6>
+                        </div>
+                        <img src="<?php echo base_url('data/journal/image/'.$journal['image']) ?>" alt="<?php echo $journal['title'] ?>">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum...
+                        </p>
+                        <a href="<?php echo site_url('web/journal/'.$journal['category'].'/'.$journal['identifier']) ?>" class="more button">Read more</a>
+                    </div>
+                <?php endforeach ?>
+            <?php else: ?>
+                <div class="row contentArea">
+                    <h4 class="subTitle">
+                        Content not available
+                    </h4>
                 </div>
-                <img src="<?php echo theme_url('web/themes/img/banner7.jpg') ?>" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum...
-                </p>
-                <a href="<?php echo site_url('web/journal_detail') ?>" class="more button">Read more</a>
-            </div>
+            <?php endif ?>
         </div>
         <div class="journalSidebar xlarge-4 large-4 medium-4 small-12 tiny-12">
             <div class="row">
                 <h4 class="subTitle">Categories</h3>
                  <ul>
-                    <li>
-                        <a href="#">News &amp; Event</a>
-                    </li>
-                    <li>
-                        <a href="#">Product Release</a>
-                    </li>
-                    <li>
-                        <a href="#">Sablon</a>
-                    </li>
-                    <li>
-                        <a href="#">Bordir</a>
-                    </li>
+                    <?php foreach ($journal_category as $cat): ?>
+                        <li>
+                            <a href="<?php echo site_url('web/journal/'.$cat['identifier']) ?>"><?php echo $cat['name'] ?></a>
+                        </li>
+                    <?php endforeach ?>
                 </ul>
             </div>
             <div class="row">
                 <h4 class="subTitle">Recent Posts</h3>
                 <ul>
-                    <li>
-                        <a href="#">Coming soon mesin bordir @Trianglenine_</a>
-                    </li>
-                    <li>
-                        <a href="#">Jasa Cetak Sablon &amp; Konveksi :)</a>
-                    </li>
-                    <li>
-                        <a href="#">Cara Memelih Bahan Baju</a>
-                    </li>
-                    <li>
-                        <a href="#">Cara Merawat Baju</a>
-                    </li>
+                    <?php foreach ($recent as $rec): ?>
+                        <li>
+                            <a href="<?php echo site_url('web/journal/'.$rec['category'].'/'.$rec['identifier']) ?>"><?php echo $rec['title'] ?></a>
+                        </li>
+                    <?php endforeach ?>
                 </ul>
             </div>
             <div class="row">

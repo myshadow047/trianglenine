@@ -14,8 +14,10 @@ echo $this->admin_panel->breadcrumb(array(
             <?php if (!empty($_POST['about_banner'])): ?>
                 <div>
                     <label><?php echo l('About Banner') ?></label>
-                    <img width="200" src="<?php echo base_url('data/about/about_banner/'.$_POST['about_banner']) ?>">
-                    <a href="<?php echo site_url('about/delete_one_image/'.$_POST['id']) ?>">x</a>
+                    <div class="thumbnail">
+                        <img width="200" src="<?php echo base_url('data/about/about_banner/'.$_POST['about_banner']) ?>">
+                        <a class="link-thumbnail" href="<?php echo site_url('about/delete_one_image/'.$_POST['id']) ?>">Delete</a>
+                    </div>
                 </div>
             <?php else: ?>
                 <div>
@@ -33,3 +35,7 @@ echo $this->admin_panel->breadcrumb(array(
         <a href="<?php echo site_url($CI->_get_uri('listing')) ?>" class="btn cancel"><?php echo l('Cancel') ?></a>
     </div>
 </form>
+
+<script type="text/javascript">
+    CKEDITOR.replace( 'about_description' );
+</script>

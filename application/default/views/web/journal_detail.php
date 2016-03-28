@@ -9,10 +9,10 @@
         <div class="journalContent xlarge-8 large-8 medium-8 small-12 tiny-12">
             <div class="row contentArea">
                 <h4 class="subTitle">
-                    <a href="">Title Content</a>
+                    <a href=""><?php echo $data_journal['title'] ?></a>
                 </h4>
                 <div class="dateShare row">
-                    <h6 class="date pull-left">Tuesday, October 6th, 2015</h6>
+                    <h6 class="date pull-left"><?php echo date('l, d M Y', strtotime($data_journal['created_time'])) ?></h6>
                     <div class="shareToggle pull-right">
                         <h6 class="date share">
                             <span class="xn xn-share"></span>
@@ -40,30 +40,9 @@
                         </ul>
                     </div>
                 </div>
-                <img src="<?php echo theme_url('web/themes/img/banner7.jpg') ?>" alt="">
+                <img src="<?php echo base_url('data/journal/image/'.$data_journal['image']) ?>" alt="<?php echo $data_journal['title'] ?>">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <?php echo $data_journal['content'] ?>
                 </p>
             </div>
         </div>
@@ -71,35 +50,21 @@
             <div class="row">
                 <h4 class="subTitle">Categories</h3>
                  <ul>
-                    <li>
-                        <a href="#">News &amp; Event</a>
-                    </li>
-                    <li>
-                        <a href="#">Product Release</a>
-                    </li>
-                    <li>
-                        <a href="#">Sablon</a>
-                    </li>
-                    <li>
-                        <a href="#">Bordir</a>
-                    </li>
+                    <?php foreach ($journal_category as $cat): ?>
+                        <li>
+                            <a href="<?php echo site_url('web/journal/'.$cat['identifier']) ?>"><?php echo $cat['name'] ?></a>
+                        </li>
+                    <?php endforeach ?>
                 </ul>
             </div>
             <div class="row">
                 <h4 class="subTitle">Recent Posts</h3>
                 <ul>
-                    <li>
-                        <a href="#">Coming soon mesin bordir @Trianglenine_</a>
-                    </li>
-                    <li>
-                        <a href="#">Jasa Cetak Sablon &amp; Konveksi :)</a>
-                    </li>
-                    <li>
-                        <a href="#">Cara Memelih Bahan Baju</a>
-                    </li>
-                    <li>
-                        <a href="#">Cara Merawat Baju</a>
-                    </li>
+                    <?php foreach ($recent as $rec): ?>
+                        <li>
+                            <a href="<?php echo site_url('web/journal/'.$rec['category'].'/'.$rec['identifier']) ?>"><?php echo $rec['title'] ?></a>
+                        </li>
+                    <?php endforeach ?>
                 </ul>
             </div>
             <div class="row">

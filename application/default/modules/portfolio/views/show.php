@@ -24,8 +24,10 @@ echo $this->admin_panel->breadcrumb(array(
             <?php if (!empty($_POST['logo'])): ?>
                 <div>
                     <label><?php echo l('Logo') ?></label>
-                    <img width="200" src="<?php echo base_url('data/portfolio/logo/'.$_POST['logo']) ?>">
-                    <a href="<?php echo site_url('portfolio/delete_one_image/'.$_POST['id']) ?>">x</a>
+                    <div class="thumbnail">
+                        <img width="200" src="<?php echo base_url('data/portfolio/logo/'.$_POST['logo']) ?>">
+                        <a class="link-thumbnail" href="<?php echo site_url('portfolio/delete_one_image/'.$_POST['id']) ?>">Delete</a>
+                    </div>
                 </div>
             <?php else: ?>
                 <div>

@@ -22,9 +22,11 @@ echo $this->admin_panel->breadcrumb(array(
     }
 </style>
 
+<div class="clear"></div>
+
 <fieldset id="profile-fieldset">
     <legend><?php echo l('User Profile') ?></legend>
-    <img src="<?php echo get_image_path($data['image']) ?>" width="200" height="200" />
+
 
     <div>
         <label><?php echo l('Username') ?></label>
@@ -42,10 +44,12 @@ echo $this->admin_panel->breadcrumb(array(
         <label><?php echo l('Gender') ?></label>
         <span><?php echo format_param_short($data['gender'], 'gender') ?></span>
     </div>
+    <div class="clear"></div>
     <div>
         <label><?php echo l('Phone No') ?></label>
         <span><?php echo (empty($data['phone'])) ? '' : $data['phone'] ?></span>
     </div>
+    <div class="clear"></div>
     <div>
         <label><?php echo l('Role') ?></label>
         <span>

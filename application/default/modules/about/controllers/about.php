@@ -2,6 +2,25 @@
 
 class about extends app_crud_controller {
 
+    function _config_grid() {
+        $fields = array_keys($this->_model($this->_name)->list_fields(true));
+        $config = array(
+            'fields' => $fields,
+            'formats' => array('', 'callback__plain_text'),
+            'sorts' => $fields,
+            'show_checkbox' => false,
+            'actions' => array(
+                'edit' => $this->_get_uri('edit')
+            ),
+        );
+
+        if ($this->CAN_DELETE) {
+            $config['actions']['delete'] = $this->_get_uri('delete');
+        }
+
+        return $config;
+    }
+
     function _save($id = null) {
         $this->_view = $this->_name . '/show';
 

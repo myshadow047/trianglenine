@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo theme_url('web/themes/css/main.css') ?>">
 
     <script type="text/javascript" src="<?php echo theme_url('web/vendor/jquery/dist/jquery.min.js') ?>"></script>
+
+    <?php echo $map['js']; ?>
 </head>
 
 <body>
@@ -51,19 +53,17 @@
                     <li>
                         <a href="#" class="down">Product <i class="xn xn-down-dir"></i></a>
                         <ul class="subMenu">
-                            <li><a href="<?php echo site_url('web/product/t-shirt') ?>">T-Shirt</a></li>
-                            <li><a href="<?php echo site_url('web/product/jacket') ?>">Jacket</a></li>
-                            <li><a href="<?php echo site_url('web/product/sweather') ?>">Sweather</a></li>
-                            <li><a href="<?php echo site_url('web/product/uniform') ?>">Uniform</a></li>
+                            <?php foreach ($product_category as $pc): ?>
+                                <li><a href="<?php echo site_url('web/product/'.$pc['product_category_identifier']) ?>"><?php echo $pc['product_category_name'] ?></a></li>
+                            <?php endforeach ?>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="down">Printing Type <i class="xn xn-down-dir"></i></a>
                         <ul class="subMenu">
-                            <li><a href="<?php echo site_url('web/printing/sablon_manual') ?>">Sablon Manual</a></li>
-                            <li><a href="<?php echo site_url('web/printing/printing_dtg') ?>">Printing DTG</a></li>
-                            <li><a href="<?php echo site_url('web/printing/bordir') ?>">Bordir</a></li>
-                            <li><a href="<?php echo site_url('web/printing/polyflex') ?>">Polyflex</a></li>
+                            <?php foreach ($printing_types as $key => $print): ?>
+                                <li><a href="<?php echo site_url('web/printing/'.$print['printing_type_identifier']) ?>"><?php echo $print['printing_type_name'] ?></a></li>
+                            <?php endforeach ?>
                         </ul>
                     </li>
                     <li><a href="<?php echo site_url('web/order_and_price') ?>">Order &amp; Price</a></li>
@@ -95,54 +95,25 @@
                         <i class="xn xn-right-open-mini"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="<?php echo site_url('web/product/t-shirt') ?>" class="row">
-                        <span>T-Shirt</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/product/jacket') ?>" class="row">
-                        <span>Jacket</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/product/sweather') ?>" class="row">
-                        <span>Sweather</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/product/uniform') ?>" class="row">
-                        <span>Uniform</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/printing/sablon_manual') ?>" class="row">
-                        <span>Sablon Manual</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/printing/printing_dtg') ?>" class="row">
-                        <span>Printing DTG</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/printing/bordir') ?>" class="row">
-                        <span>Bordir</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/printing/polyflex') ?>" class="row">
-                        <span>Polyflex</span>
-                        <i class="xn xn-right-open-mini"></i>
-                    </a>
-                </li>
+
+                <?php foreach ($product_category as $pc): ?>
+                    <li>
+                        <a href="<?php echo site_url('web/product/'.$pc['product_category_identifier']) ?>" class="row">
+                            <span><?php echo $pc['product_category_name'] ?></span>
+                            <i class="xn xn-right-open-mini"></i>
+                        </a>
+                    </li>
+                <?php endforeach ?>
+
+                <?php foreach ($printing_types as $key => $print): ?>
+                    <li>
+                        <a href="<?php echo site_url('web/printing/'.$print['printing_type_identifier']) ?>" class="row">
+                            <span><?php echo $print['printing_type_name'] ?></span>
+                            <i class="xn xn-right-open-mini"></i>
+                        </a>
+                    </li>
+                <?php endforeach ?>
+
                 <li>
                     <a href="<?php echo site_url('web/order_and_price') ?>" class="row">
                         <span>Order &amp; Price</span>
@@ -158,70 +129,63 @@
 
         <article class="storeContent">
             <div class="container">
-                <div class="row">
-                    <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
-                        <div class="titleArea">
-                            <h3 class="title">Store Location</h3>
-                        </div>
-                        <h6 class="label">Address:</h6>
-                        <h6>
-                            JL. Gurame Raya No.58 Prapatan Perum 2
-                            Kayuringin Jaya - Bekasi Barat
-                        </h6>
-                        <hr>
-                        <h6 class="label">Phone:</h6>
-                        <ul>
-                            <li>
+                <?php foreach ($locations as $location): ?>
+                    <div class="row">
+                        <?php foreach ($location as $loc): ?>
+                            <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
+                                <div class="titleArea">
+                                    <h3 class="title"><?php echo $loc['location_name'] ?></h3>
+                                </div>
+                                <h6 class="label">Address:</h6>
                                 <h6>
-                                    <a href="tel:+6285695802677">+62856 9580 2677</a>
+                                    <?php echo $loc['address'] ?>
                                 </h6>
-                            </li>
-                            <li>
+
+                                <hr>
+                                <h6 class="label">Phone:</h6>
+                                <ul>
+                                    <?php if ($loc['phone1']): ?>
+                                        <li>
+                                            <h6>
+                                                <a href="<?php echo 'tel:'.$loc['phone1'] ?>"><?php echo $loc['phone1'] ?></a>
+                                            </h6>
+                                        </li>
+                                    <?php endif ?>
+                                    <?php if ($loc['phone2']): ?>
+                                        <li>
+                                            <h6>
+                                                <a href="<?php echo 'tel:'.$loc['phone2'] ?>"><?php echo $loc['phone2'] ?></a>
+                                            </h6>
+                                        </li>
+                                    <?php endif ?>
+                                    <?php if ($loc['phone3']): ?>
+                                        <li>
+                                            <h6>
+                                                <a href="<?php echo 'tel:'.$loc['phone3'] ?>"><?php echo $loc['phone3'] ?></a>
+                                            </h6>
+                                        </li>
+                                    <?php endif ?>
+                                </ul>
+
+                                <hr>
+                                <h6 class="label"><?php echo $loc['location_name'] . ' Office Hours:' ?></h6>
                                 <h6>
-                                    <a href="tel:+6285691464628">+62856 9146 4628</a>
+                                    <?php echo $loc['office_hour'] ?>
                                 </h6>
-                            </li>
-                            <li>
-                                <h6>
-                                    <a href="tel:+622188968035">+6221 8896 8035</a>
-                                </h6>
-                            </li>
-                        </ul>
-                        <hr>
-                        <h6 class="label">Office Hours:</h6>
-                        <h6>
-                            Monday - Saturday, <strong>9 AM</strong> - <strong>9 PM</strong> WIB
-                        </h6>
+                            </div>
+                        <?php endforeach ?>
                     </div>
-                    <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
-                        <div class="titleArea">
-                            <h3 class="title">Workshop Location</h3>
-                        </div>
-                        <h6 class="label">Address:</h6>
-                        <h6>
-                            JL. Nakula Raya No.26 Bumi Satria Kencana
-                            Kayuringin Jaya - Bekasi Selatan
-                        </h6>
-                        <hr>
-                        <h6 class="label">Phone:</h6>
-                        <ul>
-                            <li>
-                                <h6>
-                                    <a href="tel:+622188968034">+6221 8896 8034</a>
-                                </h6>
-                            </li>
-                        </ul>
-                        <div class="word">
-                            <h6>
-                                Our Store will be closed on <strong class="red">Sunday</strong> and <strong class="red">Holidays</strong>,
-                                but can still order via <strong>e-mail</strong> at <a href="mailto:giarswimm@yahoo.co.id">giarswimm@yahoo.co.id</a>.
-                            </h6>
-                        </div>
-                    </div>
+                <?php endforeach ?>
+
+                <div class="word">
+                    <h6>
+                        Our Store will be closed on <strong class="red">Sunday</strong> and <strong class="red">Holidays</strong>,
+                        but can still order via <strong>e-mail</strong> at <a href="mailto:<?php echo format_param_short('1', 'contact_email') ?>"><?php echo format_param_short('1', 'contact_email') ?></a>.
+                    </h6>
                 </div>
             </div>
             <div class="row mapArea">
-                <div id="map"></div>
+                <?php echo $map['html']; ?>
             </div>
         </article>
     </main>
@@ -243,7 +207,6 @@
 
     <script type="text/javascript" src="<?php echo theme_url('web/vendor/owl-carousel/owl-carousel/owl.carousel.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo theme_url('web/vendor/Easy-Responsive-Tabs-to-Accordion/js/easyResponsiveTabs.js') ?>"></script>
-    <script type="text/javascript" src="<?php echo theme_url('web/themes/js/maps.js') ?>"></script>
     <script type="text/javascript" src="<?php echo theme_url('web/themes/js/tshirt.js') ?>"></script>
     <script type="text/javascript" src="<?php echo theme_url('web/themes/js/main.js') ?>"></script>
 

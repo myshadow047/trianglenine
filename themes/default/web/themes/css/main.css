@@ -271,11 +271,12 @@ ul.share a i { width: auto; margin: 0; }
 .uploadArea .imageArea .bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(255, 255, 255, 0.6); }
 .uploadArea .imageArea .buttonUpload { font-size: 6em; line-height: 136px; font-weight: 100; text-align: center; display: block; color: #aaa; }
 
+.subTitle { font-size: 1.4em; line-height: 130%; font-family: 'typomodernobold'; letter-spacing: 0.5pt; padding-bottom: 5px; margin-bottom: 5px; color: #666; }
+.subTitle a { color: #666; }
+.subTitle a:hover { color: #D52925; }
+
 .journal.container { padding: 20px 0; }
 .journal .titleArea { padding: 0 15px; }
-.journal .subTitle { font-size: 1.4em; line-height: 130%; font-family: 'typomodernobold'; letter-spacing: 0.5pt; padding-bottom: 5px; margin-bottom: 5px; color: #666; }
-.journal .subTitle a { color: #666; }
-.journal .subTitle a:hover { color: #D52925; }
 .journal .date { font-style: italic; font-size: 1.1em; color: #8A8A89; letter-spacing: 0.3pt; padding: 3px 0; margin: 0; }
 .journal .share { 
 	cursor: pointer; font-style: normal; border: 1px solid #aaa; padding: 2px 10px;
@@ -294,7 +295,7 @@ ul.share a i { width: auto; margin: 0; }
 .journal .share:hover { color: #D52925; border-color: #D52925; }
 .journal .share .xn { width: auto; margin-right: 0; }
 .journal .share .text { display: none; }
-.journal p { font-size: 1em; margin: 8px 0 0; }
+.journal p { font-size: 1em; margin: 8px 0 0; color: #525252; }
 .journal .contentArea { padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #aaa; }
 .journal .contentArea:last-child { margin-bottom: 0; border-bottom: 0; }
 .journal .contentArea img { width: 100%;display: table; margin-bottom: 20px; }
@@ -308,6 +309,34 @@ ul.share a i { width: auto; margin: 0; }
 .journal .journalSidebar ul { padding-left: 20px; margin: 0; }
 .journal .journalSidebar ul a { font-size: 1em; color: #666; text-decoration: underline; }
 .journal .journalSidebar ul a:hover { color: #D52925; }
+
+.priceArea .row > .wrapper:last-child, 
+.priceArea .row > *:last-child .wrapper,
+.priceArea .row > .wrapper:first-child, 
+.priceArea .row > *:first-child .wrapper {
+	padding: 0!important;
+}
+.priceArea .priceContent {
+	margin-top: 30px;
+}
+.priceArea .word {
+	margin: 30px 0 0;
+	font-style: italic;
+	color: #8A8A89;
+	font-size: 1em;
+}
+.priceArea ol {
+	padding-left: 20px;
+}
+.priceArea li h5 {
+	color: #525252;
+	font-size: 1.1em;
+}
+
+.order { 
+	margin-bottom: 30px; 
+	padding-top: 20px;
+}
 
 .context-menu,
 .context-menu li.divider,
@@ -657,7 +686,7 @@ footer .contact li:last-child { border-right: 0; padding-right: 0; margin-right:
 		font-size: 1.2em; 
 	}
 
-	.journal .subTitle {
+	.subTitle {
 		font-size: 1.8em;
 	}
 
@@ -685,6 +714,27 @@ footer .contact li:last-child { border-right: 0; padding-right: 0; margin-right:
 	    width: auto;
 	    float: right;
 	}
+
+	.priceArea .row > .wrapper:last-child, 
+	.priceArea .row > *:last-child .wrapper,
+	.priceArea .row > .wrapper:first-child, 
+	.priceArea .row > *:first-child .wrapper {
+		padding: 10px!important;
+	}
+
+	.priceArea .word {
+		font-size: 1.2em;
+	}
+
+	.priceArea li h5 {
+		font-size: 1.3em;
+	}
+
+	.order { 
+		margin-bottom: 50px; 
+		padding-top: 0;
+	}
+
 
 	ul.pagination { 
 		margin-top: 20px; 

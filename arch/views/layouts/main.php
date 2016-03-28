@@ -26,6 +26,18 @@
         <script type="text/javascript" src="<?php echo theme_url('js/xn.js') ?>" data-xn-config="baseUrl: '<?php echo base_url() ?>'"></script>
         <script type="text/javascript" src="<?php echo theme_url('js/xn-global-main.js') ?>"></script>
 
+        <script type='text/javascript' src="<?php echo theme_url('web/vendor/ckeditor/ckeditor.js') ?>"></script>
+        <script type="text/javascript">
+            CKEDITOR.config.toolbar = [
+               ['Format','FontSize'],
+
+               ['Bold','Italic','Underline','StrikeThrough','-','Undo','Redo'],
+
+               ['NumberedList','BulletedList'],
+               ['Table']
+            ] ;
+        </script>
+
         <title><?php echo $CI->_page_title; ?></title>
     </head>
 
